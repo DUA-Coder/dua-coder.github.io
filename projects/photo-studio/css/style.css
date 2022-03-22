@@ -3,4 +3,61 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+header .container{
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+.header__menu{
+    display: flex;
+    padding: 24px 100px;
+}
+
+.col-70{
+    flex: 0 0 auto;
+    width: 70%;
+}
+
+.col-30{
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+.header__menu_left, .header__menu_right{
+    display: flex;
+    align-items: center;
+}
+
+.header__menu_right{
+    justify-content: flex-end;
+}
+
+.header__menu_left img{
+    margin-right: 120px;
+}
+
+.header__menu_left a{
+    color: #222222;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 17px;
+}
+
+.header__menu_right button{
+    background-color: #ff3c2d;
+    border: 0;
+    color:#fff;
+    padding: 6px 21px;
+}
+
+.header__menu_socials a{
+    color: #222222;
+    margin-left: 15px;
+}
+
+.header__menu_socials{
+    margin-left: 40px;
 }
