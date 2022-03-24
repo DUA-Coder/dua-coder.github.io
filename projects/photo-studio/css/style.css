@@ -1,3 +1,18 @@
+@media screen and (max-width:1440px){
+
+    .header__menu_socials{
+        margin-left: 15px!important;
+    }
+
+
+}
+
+@media screen and (max-width:1200px){
+    /* .header__menu_socials{
+        display: none;
+    } */
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,15 +21,23 @@
     font-size: 16px;
 }
 
-header .container{
-    max-width: 1720px;
-    margin: 0 auto;
+.show-flex{
+    display: flex!important;
+    transition: all 1s;
 }
 
 .header__menu{
     display: flex;
     padding: 24px 100px;
+    flex-wrap: wrap;
 }
+
+@media screen and (max-width:1440px){
+    .header__menu{
+        padding: 24px 30px;
+    }
+}
+
 
 .col-70{
     flex: 0 0 auto;
@@ -31,12 +54,74 @@ header .container{
     align-items: center;
 }
 
+.header__menu_left{
+    flex-wrap: wrap;
+}
+
+.header__menu_toggle i{
+    font-size: 24px;
+}
+
+@media screen and (min-width:768px){
+    .header__menu_toggle{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:767px){
+    .header__menu nav{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+        
+    }
+
+    .header__menu nav a{
+        margin: 5px 0;
+        padding: 10px 0;
+    }
+
+    .header__menu nav a:hover{
+        color:#fff;
+        background-color:#000;
+    }
+
+    .header__menu_right{
+        display: none;
+        flex-direction: column;
+        width: 100%;        
+        text-align: center;
+    }
+
+    .header__menu_socials{
+        margin: 10px 0!important;
+    }
+
+    .header__menu_socials a{
+        margin:0 10px ;
+    }
+}
+
+
+
 .header__menu_right{
     justify-content: flex-end;
 }
 
+
+
 .header__menu_left img{
     margin-right: 120px;
+}
+
+@media screen and (max-width:1440px){
+    .header__menu_left img{
+        margin-right: 34px;
+    }
 }
 
 .header__menu_left a{
@@ -46,11 +131,42 @@ header .container{
     margin: 0 17px;
 }
 
+.header__menu_left a:hover{
+    border-bottom: 2px solid #222222;
+}
+
+
 .header__menu_right button{
     background-color: #ff3c2d;
     border: 0;
     color:#fff;
     padding: 6px 21px;
+    cursor: pointer;
+    border:1px solid transparent;  
+    transition: all 0.2s;
+}
+.header__menu_right button:hover{
+    background-color:#fff;
+    color:#000;
+    border:1px solid #000;  
+}
+
+
+@media screen and (max-width:992px){
+    /* .header__menu_right{
+        display: none;
+    } */
+
+    header .col-70{
+        width: 100%;
+    }
+
+    .header__menu_left{
+        justify-content: space-between;
+    }
+    .header__menu_left a{
+        margin: 0 10px;
+    }
 }
 
 .header__menu_socials a{
@@ -60,4 +176,21 @@ header .container{
 
 .header__menu_socials{
     margin-left: 40px;
+}
+
+@media screen and (max-width:1440px){
+    .header__menu_socials{
+        margin-left: 15px;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1200px){
+    header .col-70{
+        width: 80%;
+    }
+
+    header .col-30{
+        width: 20%;
+    }
 }
