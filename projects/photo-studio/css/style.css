@@ -33,7 +33,7 @@
 }
 
 .container{
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -216,6 +216,8 @@
 
 .header__title{
     background-image: url("../img/bg_header.png");
+    background-size: cover;
+    background-position: center center;
     color:#fff; 
     padding: 77px 0 70px 0;
 }
@@ -249,3 +251,14 @@
         font-size: 36px;
     }
 }
+
+.p{
+    display: inline;
+}
+
+.span{
+    display: block;
+}
+
+
+
