@@ -32,6 +32,12 @@
     flex-wrap: wrap;
 }
 
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 @media screen and (max-width:1440px){
     .header__menu{
         padding: 24px 30px;
@@ -136,7 +142,7 @@
 }
 
 
-.header__menu_right button{
+.btn_orange{
     background-color: #ff3c2d;
     border: 0;
     color:#fff;
@@ -145,7 +151,7 @@
     border:1px solid transparent;  
     transition: all 0.2s;
 }
-.header__menu_right button:hover{
+.btn_orange:hover{
     background-color:#fff;
     color:#000;
     border:1px solid #000;  
@@ -192,5 +198,54 @@
 
     header .col-30{
         width: 20%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px){
+    .header__menu_socials{
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+    .header__menu_right {
+        display: none;
+    }
+}
+
+
+.header__title{
+    background-image: url("../img/bg_header.png");
+    color:#fff; 
+    padding: 77px 0 70px 0;
+}
+
+.header__title_main p{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 0.8;
+    margin-bottom: 25px;
+}
+
+.header__title_description{
+    font-size: 18px;
+    margin: 30px 0 45px 0;
+}
+
+.header__title .btn_orange{
+    padding: 10px 45px;
+}
+
+@media screen and (max-width:992px){
+    .header__title{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    .header__title_main p{
+        font-size: 36px;
     }
 }
