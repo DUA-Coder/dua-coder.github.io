@@ -38,6 +38,18 @@
     padding: 0 15px;
 }
 
+@media (min-width: 1600px) and (max-width:2199px){
+    .container{
+        max-width: 1560px;
+    }
+}
+
+@media screen and (min-width:2200px){
+    .container{
+        max-width: 2100px;
+    }
+}
+
 @media screen and (max-width:1440px){
     .header__menu{
         padding: 24px 30px;
