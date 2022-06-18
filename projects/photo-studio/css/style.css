@@ -555,6 +555,7 @@
 
 .about__top_left{
     width: 60%;
+    padding-right: 150px;
 }
 
 .about__top_right{
@@ -577,4 +578,78 @@
     font-family: "Tahu!";
     font-size: 50px;
     font-weight:500;
+    margin-bottom: 60px;
+}
+
+.tip{
+    display: flex;
+    align-items:center;
+    border-bottom:1px solid #cccccc;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+}
+
+
+
+.tip p{
+    font-size: 16px;
+    font-weight: 500;
+    width: 300px;
+}
+
+.tip__img{
+    width: 110px;
+    text-align: center;
+}
+
+@media screen and (max-width:992px) {
+    .about__top{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about__top_left{
+        width: 100%!important;
+        padding-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .about__top_left h1{
+        font-size: 36px;
+    }
+
+    .about__top_left p{
+        font-size: 16px;
+    }
+    
+    .about__top_right{
+        width: 100%!important;
+    }
+    
+    .tip{
+        justify-content: center;
+        text-align: left;
+    }
+
+    .tip__img{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .about__tips{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about__top_left{
+        width: 55%;
+    }
+
+    .about__top_right{
+        width: 45%;
+    }
+
+    .tip p{
+        width: 210px;
+    }
 }
