@@ -547,6 +547,7 @@
 .about{
     background-color:#f6f6f6;
     padding: 80px 0 100px 0;
+    
 }
 
 .about__top{
@@ -602,6 +603,47 @@
     text-align: center;
 }
 
+.about__bottom{
+    position: relative;
+}
+
+.about__bottom_img{
+    position: absolute;
+    top: -120px;
+}
+
+.covid19{
+    background: #222222;
+    color:#fff;
+    padding: 50px 80px 70px 80px;
+    width: 65%;
+    margin-left: 150px;
+}
+
+.covid19 h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.covid19 p{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.covid19 p:nth-child(2){
+    margin-bottom: 40px;
+}
+
+.about__bottom{
+    display: flex;
+}
+
+.tip:last-child{
+    margin-bottom: 0!important;
+}
+
 @media screen and (max-width:992px) {
     .about__top{
         flex-direction: column;
@@ -632,6 +674,21 @@
 
     .tip__img{
         width: 200px;
+    }
+    .about__bottom_img{
+        display: none;
+    }
+
+    .covid19{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1599px) {
+    .about__bottom{
+        margin-top: 40px;
     }
 }
 
