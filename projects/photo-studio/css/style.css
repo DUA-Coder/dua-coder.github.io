@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Tahu!";
+    src: url("../fonts/Tahu!.ttf");
+}
+
 @media screen and (max-width:1440px){
 
     .header__menu_socials{
@@ -537,4 +542,39 @@
     .professional__tabcontent_human img{
         margin: 0 auto;
     }
+}
+
+.about{
+    background-color:#f6f6f6;
+    padding: 80px 0 100px 0;
+}
+
+.about__top{
+    display: flex;
+}
+
+.about__top_left{
+    width: 60%;
+}
+
+.about__top_right{
+    width: 40%;
+}
+
+.about__top_left h1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 55px;
+    margin-bottom: 35px;
+}
+
+.about__top_left p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about__top_right h2{
+    font-family: "Tahu!";
+    font-size: 50px;
+    font-weight:500;
 }
