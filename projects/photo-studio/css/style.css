@@ -26,6 +26,14 @@
     transition: all 1s;
 }
 
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
 .header__menu{
     display: flex;
     padding: 24px 100px;
@@ -426,5 +434,107 @@
 
     .near__block input, .near__block button{
         margin-bottom: 10px;
+    }
+}
+
+/* Professionals */
+.professionals {
+    padding: 120px 0 150px 0;
+}
+
+.professionals h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.professional__services{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.professional__service{
+    color:#b1b1b1;
+    margin: 0 23px;
+    font-size: 18px;
+}
+
+.professional__service_active{
+    color:#222222;
+    border-bottom: 2px solid #ff3c2d;
+}
+
+.professional__tabcontents .col-50{
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.professional__tabcontent,.professional__tabcontent_people{
+    display: flex;
+}
+
+.professional__tabcontent_human img{
+    max-width: 100%;
+    display: block;
+    cursor:pointer;
+}
+
+.professional__tabcontent_human{
+    width: 50%;
+    padding: 16px;
+}
+
+.professional__tabcontent_people{
+    flex-wrap: wrap;
+}
+
+.professional__tabcontent_right {
+    padding-top: 16px;
+}
+
+.professional__tabcontent_right img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.tabcontent__arrow{
+    text-align: center;
+    padding: 0 16px;
+    width: 45%;
+    margin: 0 auto;
+    background-color:#f6f6f6;
+}
+
+@media screen and (max-width:1200px) {
+    .professional__services{
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .professional__services{
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    .professional__tabcontent_right{
+        display: none;
+    }
+
+    .professional__tabcontent_left.col-50{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .professional__tabcontent_human{
+        width: 100%;
+    }
+
+    .professional__tabcontent_human img{
+        margin: 0 auto;
     }
 }
