@@ -710,3 +710,21 @@
         width: 210px;
     }
 }
+
+/* Reviews section */
+
+.reviews{
+    background-color:#222222;
+    color:#fff;
+    text-align: center;
+    padding: 85px 0 140px 0;
+}
+
+.reviews h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.reviews p{
+    font-size: 18px;
+}
