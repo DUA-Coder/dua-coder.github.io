@@ -3,6 +3,11 @@
     src: url("../fonts/Tahu!.ttf");
 }
 
+@font-face {
+    font-family: "ProximaNova";
+    src: url("../fonts/proximanova_regular.ttf");
+}
+
 @media screen and (max-width:1440px){
 
     .header__menu_socials{
@@ -24,6 +29,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+}
+
+img{
+    max-width: 100%;
 }
 
 .show-flex{
@@ -586,8 +595,8 @@
     display: flex;
     align-items:center;
     border-bottom:1px solid #cccccc;
-    margin-bottom: 30px;
-    padding-bottom: 12px;
+    margin-bottom: 18px;
+    padding: 12px 0;
 }
 
 
@@ -657,6 +666,7 @@
 
     .about__top_left h1{
         font-size: 36px;
+        line-height: 1.5;
     }
 
     .about__top_left p{
@@ -683,6 +693,7 @@
         width: 100%;
         margin-left: 0;
         text-align: center;
+        padding: 25px 15px;
     }
 }
 
@@ -728,3 +739,62 @@
 .reviews p{
     font-size: 18px;
 }
+
+/* .reviews__slider div{
+    width: 30%;
+} */
+
+.review__details{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 18px;
+}
+
+.review__details p{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.review{
+    padding: 0 20px;
+}
+
+
+.review__text{
+    position: relative;
+    margin-top: 25px;
+}
+
+.review__text p{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.reviews__slider{
+    margin-top: 50px;
+    padding-bottom: 35px;
+}
+
+@media screen and (max-width: 1550px) {
+    .review__text p{
+        font-size: 16px;
+    }
+
+    
+}
+
+@media screen and (max-width:992px) {
+    .reviews h1{
+        font-size: 36px;
+    }
+
+    .reviews p{
+        font-size: 16px;
+    }
+}
+
