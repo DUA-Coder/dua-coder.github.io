@@ -798,3 +798,39 @@ img{
     }
 }
 
+/* More Section */
+
+.more_section{
+    padding: 130px 0;
+    background-image:url("../img/bg-more.jpg");
+    background-position:center center;
+    background-size:cover;
+}
+
+.mores{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.more h1{
+   font-size: 50px;
+    color: #fff;
+}
+
+.more:first-child{
+    width: 50%;
+}
+
+
+.more .btn_orange{
+    padding: 10px 50px;
+}
+
+@media screen and (max-width: 1550px) {
+    .more h1{
+        font-size:36px;
+    }
+
+    
+}
