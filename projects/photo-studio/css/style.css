@@ -814,8 +814,10 @@ img{
 }
 
 .more h1{
-   font-size: 50px;
+    font-size: 50px;
     color: #fff;
+    font-weight: 600;
+    line-height: 48px;
 }
 
 .more:first-child{
@@ -833,4 +835,24 @@ img{
     }
 
     
+}
+
+/* Blog */
+
+.blog_section{
+    padding: 90px 0 110px 0;
+}
+
+.blog_section h1, .blog_section .blog__desc{
+    text-align: center;
+}
+
+.blog_section h1{
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.blog__desc{
+    font-size: 18px;
 }
