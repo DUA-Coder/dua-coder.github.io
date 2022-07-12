@@ -837,6 +837,22 @@ img{
     
 }
 
+@media screen and (max-width:992px){
+    .mores{
+        flex-direction: column;
+    }
+
+    .more:first-child{
+        width: 100%;
+        text-align: center;
+    }
+
+    .more h1{
+        font-size:30px;
+        margin-bottom: 20px;
+    }
+}
+
 /* Blog */
 
 .blog_section{
@@ -934,3 +950,120 @@ img{
     }
 }
 
+/* Footer */
+
+footer{
+    background-color:#222222;
+    padding: 90px 0 25px 0;
+}
+
+.col-25{
+    width: 40%;
+}
+
+.footer-top,.footer-bottom{
+    display: flex;
+}
+
+.footer__title{
+    color: #626262;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+footer ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-top__posts,.footer-bottom__map{
+    padding-left: 25px;
+}
+
+.footer-top__posts li{
+    list-style-image: url("../img/icons/Arrow.png");
+    padding-left: 10px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+footer ul{
+    margin-top: 20px;
+}
+
+.footer-bottom__map li{
+    padding-left: 10px;
+}
+
+.footer-bottom__map_icon{
+    list-style-image: url("../img/icons/location.png");
+}
+
+.footer-bottom__contact a{
+    font-size: 30px;
+}
+
+.footer-bottom__email a{
+    border-bottom:1px solid #ff3c2d;
+}
+
+.footer__bottom_social{
+    text-align: right;
+}
+
+.footer__bottom_social a{
+    border-bottom:1px solid #444444;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+}
+
+.footer__bottom_social a:hover{
+    border-bottom:1px solid #fff;
+}
+
+.footer-copy{
+    font-size: 18px;
+    text-align: center;
+    color: #636363;
+}
+
+footer hr{
+    background-color:#393939;
+    height: 1px;
+    margin: 50px 0 20px 0;
+    border:0;
+}
+
+@media screen and (max-width:1600px) {
+    .empty{
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .footer-bottom{
+        flex-direction: column;
+    }
+
+    .footer-top{
+        flex-direction: column;
+    }
+    .col-25{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer__bottom_social{
+        text-align: center;
+    }
+    .footer-bottom__map li,.footer-top__posts li{
+        padding-left: 0;
+    }
+    
+}
