@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev | Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Header-->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="/img/logo.svg" alt="WebDev Logo">
+            </a>
+            <nav class="navbar-nav">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main>
+        <section class="hero hero-sm"  style="background-image: url('/img/contact/hero.jpeg')">
+            <div class="container">
+                <h1 class="mb-0">Contact Us</h1>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="contact-form">
+                    <div class="contact-form__form">
+                        <form action="#" class="form-layout">
+                            <div class="form-col-50">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+
+                            <div class="form-col-50">
+                                <label for="email">Your Email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+
+                            <div class="form-col">
+                                <label for="msg">Your Message</label>
+                                <textarea class="form-control" name="msg" id="msg" rows="4"></textarea>
+                            </div>
+
+                            <div class="form-col">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-form__info">
+                        <p class="lead">Email: <a href="mailto:dmytropopov7@gmail.com">dmytropopov7@gmail.com</a></p>
+                        <p class="lead">Phone: <a href="tel:+380961196915">+380961196915</a></p>
+                        <br>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores tenetur ipsa necessitatibus eum! Excepturi aut voluptate maxime, soluta quibusdam dolorum.</p>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <small class="footer-copyright">&copy; 2021 WebDev - All Rights Reserved</small>
+                <ul class="footer-social">
+                    <li><a href="#"><img src="/img/icons/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="/img/icons/instagram.svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="/img/icons/youtube.svg" alt="youtube"></a></li>
+                    <li><a href="#"><img src="/img/icons/twitter.svg" alt="twitter"></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
