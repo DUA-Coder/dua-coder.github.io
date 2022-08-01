@@ -1,0 +1,488 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.bold{
+    font-weight: 700;
+}
+
+img,iframe{
+    max-width: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.container-t{
+    max-width: 100%;
+    margin: 0 0 0 10%;
+}
+
+@media screen and (max-width:992px) {
+    .container,.container-t .about__row div:first-child{
+        padding: 0 15px;
+    }
+    .container-t{
+        margin: 0 0 0 3%;
+    }
+
+    .container-t .about__row div:first-child{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container-t{
+        margin: 0;
+    }
+}
+
+/* .header__top{
+    -webkit-box-shadow: 0px 8px 6px 0px rgba(34, 60, 80, 0.22);
+    -moz-box-shadow: 0px 8px 6px 0px rgba(34, 60, 80, 0.22);
+    box-shadow: 0px 8px 6px 0px rgba(34, 60, 80, 0.22);
+    padding: 10px 0;
+} */
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color:#fff;
+}
+
+
+
+.header__top_logo img{
+    width: 200px;
+}
+
+.header__top nav a{
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+}
+
+
+.header__top nav a:hover{
+    border-bottom: 3px solid #ff7f00;
+}
+
+.show-flex{
+    display: flex!important;
+}
+
+@media screen and (min-width:993px) {
+    .header__top_toggler{
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .header__top nav{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .header__top nav a{
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .header__top_logo img{
+        width: 130px;
+    }
+    .header__top_toggler i{
+        font-size: 24px;
+    }
+}
+
+header{
+    background-image: url("/img/bg.jpg");
+    height: 100vh;
+    background-position:center center;
+    background-size:cover;
+    padding-top: 30px;
+    background-attachment: fixed;
+}
+
+.header-bottom{
+    padding-top: 100px;
+}
+
+.header-bottom h1{
+    text-align: center;
+    color:#fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    word-spacing: 5px;
+}
+
+.header__bottom_more{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.header__bottom_more a{
+    font-size: 40px;
+    color:#fff;
+    padding: 0px 15px;
+    transition: 0.5s;
+}
+
+.header__bottom_more a:hover{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+    color:#000;
+}
+
+@media screen and (max-width:992px) {
+    .header-bottom h1{
+        font-size: 36px;
+    }
+}
+
+
+.about__row{
+    display: flex;
+}
+
+.about__row div:first-child{
+    width: 50%;
+    padding: 140px 0 180px 0;
+    margin-right: 70px;
+}
+
+hr{
+    height: 5px;
+    width: 30px;
+    background-color:#ff7f00;
+    border: 0;
+    margin: 10px auto 15px auto;
+}
+
+.about__row h1{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.about{
+    background-color:rgb(247, 247, 247);
+}
+
+.about__row hr{
+    margin: 15px 0 25px 0;
+}
+
+.about__row p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about__row div:last-child{
+    background-image:url("../img/bg2.jpg");
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .about__row div:last-child {
+        background: url('../images/bg2.jpg') center top no-repeat scroll;
+        background-size: auto 100vh;
+    }    
+
+    header{
+        background: url('../images/bg.jpg') center top no-repeat scroll;
+        background-size: auto 100vh;
+    }
+    }
+
+@media screen and (max-width:768px) {
+    .about__row div:last-child{
+        height: 400px;
+    }
+
+    .about__row{
+        flex-direction: column;
+    }
+
+    .about__row div:first-child{
+        width: 100%;
+        padding: 70px 0 90px 0;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .about__row div:first-child hr{
+        margin: 15px auto 25px auto;
+
+    }
+}
+
+
+.services-section{
+    text-align: center;
+    padding: 100px 0 120px 0;
+}
+
+
+.services-section h3{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.services{
+    margin-top: 100px;
+    
+}
+
+.service{
+    padding: 0 10px;
+    width: 25%;
+}
+
+.service h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.service button, .contact__form button, .service a{
+    background-color: #000;
+    color:#ff7f00;
+    border:0;
+    text-decoration: none;
+    border-radius:7px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: 0.5s ;
+}
+
+.service button:hover, .contact__form button:hover,.service a:hover{
+    color: #000;
+    background-color:#ff7f00;
+}
+
+.clients,.projects,.contacts{
+    padding: 60px 0 100px 0;
+}
+
+.clients h3,.projects h3,.contacts h3{
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.projects{
+    background-color:rgb(247, 247, 247);
+}
+
+.contacts iframe{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+
+.contact{
+    text-align: center;
+    width: 20%;
+}
+
+.contact i{
+    font-size:36px;
+}
+
+.contact h4{
+    margin: 20px 0 3px 0;
+    font-size: 18px;
+}
+
+.contact p{
+    font-size: 17px;
+}
+
+.contacts label, .contacts input,.contacts textarea{
+    display: block;
+}
+
+.contact__form{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact__form div{
+    width: 50%;
+}
+
+.contact__form form{
+    text-align: center;
+}
+
+
+.contact__form input, .contact__form textarea{
+    width: 60%;
+    margin: 15px auto;
+}
+
+.contact__form input,.contact__form textarea{
+    padding: 10px 15px;
+    border-radius:7px;
+    border: 1px solid #ccc;
+}
+
+.contact__form button{
+    margin-top: 20px;
+}
+
+@media screen and (max-width:992px) {
+    .contact-info{
+        flex-direction: column;
+    }
+
+    .services{
+        flex-direction: column;
+    }
+    .service{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .contact{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact__form{
+        flex-direction: column;
+    }
+
+    .contact__form input,.contact__form textarea{
+        width: 90%;
+    }
+
+    .contact__form div{
+        width: 100%;
+    }
+
+    html,body{
+        overflow-x: hidden;
+    }
+
+    .clients h3, .projects h3, .contacts h3, .about h3,.services-section h3{
+        font-size: 24px;
+    }
+}
+
+@media (min-width:1600px) and (max-width:1920px) {
+    .container-t{
+        max-width: 100%;
+        margin: 0 0 0 15%;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .container-t{
+        max-width: 100%;
+        margin: 0 0 0 20%;
+    }
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-img img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    padding-top: 100px;
+    display: none;
+}
+
+.modal-body{
+    width: 70%;
+    background-color:#fff;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.close{
+    text-align: right;
+    cursor:pointer;
+    font-size: 24px;
+}
+
+.modal-body p, .vyprob p, .vyprob ul{
+    margin-bottom: 10px;
+}
+
+.show{
+    display: block;
+}
+
+.modal .compares{
+    display: flex;
+}
+
+.modal .compare{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.modal .compare ul, .vyprob ul{
+    padding: 0 20px;
+
+}
+
+
+.vyprob{
+    padding: 60px 0;
+}
+
+.vyprob h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
