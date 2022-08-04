@@ -29,7 +29,7 @@ button:hover{
 }
 
 @media screen and (max-width:992px) {
-    .container,.container-t .about__row div:first-child{
+    .container{
         padding: 0 15px;
     }
     .container-t{
@@ -37,7 +37,8 @@ button:hover{
     }
 
     .container-t .about__row div:first-child{
-        margin-bottom: 40px;
+        
+        padding:60px 15px 100px 15px;
     }
 }
 
@@ -117,12 +118,18 @@ button:hover{
 }
 
 header{
-    background-image: url("/img/bg.jpg");
-    height: 100vh;
-    background-position:center center;
-    background-size:cover;
+    background-image: url("..//img/bg.jpg");
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(0);
+    will-change: transform;
     padding-top: 30px;
-    background-attachment: fixed;
 }
 
 .header-bottom{
@@ -168,7 +175,7 @@ header{
     display: flex;
 }
 
-.about__row div:first-child{
+.about__row_text{
     width: 50%;
     padding: 140px 0 180px 0;
     margin-right: 70px;
@@ -200,15 +207,39 @@ hr{
     text-align: justify;
 }
 
-.about__row div:last-child{
-    background-image:url("../img/bg2.jpg");
+.bg-wrap{
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+    height: 100%;
 }
 
-@supports (-webkit-touch-callout: none) {
+.overlay,.overlay-header{
+    position: relative;
+    width: 100%;
+}
+
+.overlay-header{
+    height: 100vh;
+}
+
+#main{
+    background-image:url("../img/bg2.jpg");
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* @supports (-webkit-touch-callout: none) {
     .about__row div:last-child {
         background: url('../images/bg2.jpg') center top no-repeat scroll;
         background-size: auto 100vh;
@@ -218,7 +249,7 @@ hr{
         background: url('../images/bg.jpg') center top no-repeat scroll;
         background-size: auto 100vh;
     }
-    }
+    } */
 
 @media screen and (max-width:768px) {
     .about__row div:last-child{
@@ -485,4 +516,62 @@ hr{
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
+}
+
+.header-other{
+    padding-top: 30px;
+}
+
+.header-other .header__top_toggler, .header-other a{
+    color: #000!important;
+}
+
+.docs-section{
+    padding: 50px 0;
+}
+
+.docs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-bottom: 50px;
+}
+
+.doc{
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.doc a{
+    text-decoration:none;
+    color:#000;
+    background-color:#ff7f00;
+    padding: 10px 15px;
+    display: inline-block;
+    border:1px solid #000;
+    min-height:130px;
+    align-items:center;
+    font-weight: 700;
+    width: 100%;
+}
+
+.doc a:hover{
+    color:#ff7f00;
+    background-color:#000;
+}
+
+.docs:first-child a{
+    min-height:70px;
+}
+
+@media screen and (max-width:768px) {
+    .doc{
+        width: 100%;
+    }
+
+    .doc a{
+        padding: 30px 15px;
+    }
 }
